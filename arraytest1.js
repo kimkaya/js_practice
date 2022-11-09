@@ -84,3 +84,6 @@ console.log(suser);
 
 let suserarr = uarr.filter(item => item.name =="song");
 console.log(suserarr);
+
+let sucharr = uarr.filter(item => item.age >=30);
+console.log(sucharr);
