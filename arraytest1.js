@@ -142,3 +142,6 @@ console.log(iarr2);
 
 stud.sort((s1,s2) => s1.no-s2.no);
 console.log(stud);
+
+stud.sort((s1,s2) => s2.no-s1.no);
+console.log(stud);
