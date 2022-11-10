@@ -87,3 +87,58 @@ console.log(suserarr);
 
 let sucharr = uarr.filter(item => item.age >=30);
 console.log(sucharr);
+
+let iarr = [1,2,3,4,5];
+let marr = iarr.map(item=>item*2);
+console.log(marr);
+
+let stud = [
+    {no:3, score:80},
+    {no:2, score:75},
+    {no:1, score:90},
+];
+
+let mstud = stud.map(item=>({no:item.no,score:item.score+5}))
+console.log(mstud)
+
+let obj1 = {id:1,title:'11'};
+let obj2 = {...obj1,content:'33'};
+let obj3 = {...obj1};
+let obj4 = obj1;
+console.log(obj2);
+
+let board = {
+    no:1,
+    title:"제목",
+    content:"내용",
+    readcout:0
+}
+
+let boardcopy = {...board, readcount:board.readcount+1};
+
+let iarr2 = [5,3,1,8,7];
+console.log(iarr2);
+iarr2.sort();
+console.log(iarr2);
+iarr2.sort((x,y)=>y-x);
+console.log(iarr2);
+
+//ascinding compare(오름차순 정렬 비교함수)
+function asd_compare(x,y){
+        // if (x>y) return 1;
+        // else if(x<y) return -1;
+        // else return 0;
+        return x-y;
+}
+iarr2.sort(asd_compare);
+console.log(iarr2);
+
+//descinding compare(내림차순 정렬 비교함수)
+function desc_compare(x,y){
+    return y-x;
+}
+iarr2.sort(desc_compare);
+console.log(iarr2);
+
+stud.sort((s1,s2) => s1.no-s2.no);
+console.log(stud);
